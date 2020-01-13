@@ -10,6 +10,11 @@ const Header = ({ currentUser }) => (
             <Logo className='logo' />
         </Link>
         <div className="options">
+            {/* <div className="name">
+                {
+                    currentUser ? `Hi, ${currentUser.displayName.split(' ', 2)[1]}` : ''
+                }
+            </div> */}
             <Link className="option" to='/shop'>
                 SHOP
             </Link>
