@@ -10,11 +10,11 @@ const Header = ({ currentUser }) => (
             <Logo className='logo' />
         </Link>
         <div className="options">
-            {/* <div className="name">
+            <div className="name">
                 {
-                    currentUser ? `Hi, ${currentUser.displayName.split(' ', 2)[1]}` : ''
+                    currentUser ? `Hi, ${currentUser.displayName}` : ''
                 }
-            </div> */}
+            </div>
             <Link className="option" to='/shop'>
                 SHOP
             </Link>
