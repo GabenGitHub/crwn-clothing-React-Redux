@@ -13,11 +13,12 @@ const Header = ({ currentUser, hidden }) => (
             <Logo className='logo' />
         </Link>
         <div className="options">
-            <div className="name">
-                {
-                    currentUser ? `Hi, ${currentUser.displayName}` : ''
-                }
-            </div>
+            {
+                currentUser &&
+                <div className="name">
+                    {`Hi, ${currentUser.displayName}`}
+                </div>
+            }
             <Link className="option" to='/shop'>
                 SHOP
             </Link>
